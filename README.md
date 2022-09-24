@@ -1,4 +1,4 @@
-# ToDo
+# Pokedex
 
 ## Table of contents
 
