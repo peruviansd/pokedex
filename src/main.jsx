@@ -15,8 +15,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <DataProvider>
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/:pokemon" element={<PokemonPage />}>
+          <Route path="/pokedex" index element={<App />} />
+          <Route path="/pokedex/:pokemon" element={<PokemonPage />}>
             <Route index element={<About />} />
             <Route path="about" element={<About />} />
             <Route path="stats" element={<Stats />} />

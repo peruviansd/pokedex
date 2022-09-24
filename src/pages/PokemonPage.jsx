@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Navigation from "../components/Navigation";
 import { Outlet, useNavigate } from "react-router-dom";
 import { DataContext } from "../context/Context";
