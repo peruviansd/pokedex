@@ -7,11 +7,8 @@ import Evolutions from "./components/Evolutions";
 import Moves from "./components/Moves";
 import "./index.css";
 import PokemonPage from "./pages/PokemonPage";
-import { DataContext } from "./context/Context";
-import { useContext } from "react";
+
 function App() {
-  const { ActivePokemon } = useContext(DataContext);
-  console.log(ActivePokemon);
   return (
     <div className=" md:max-w-xl md:mx-auto ">
       <Routes>

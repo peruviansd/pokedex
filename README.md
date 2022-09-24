@@ -14,7 +14,7 @@
 
 ### Screenshot
 
-![qr imagen](https://raw.githubusercontent.com/peruviansd/pokedex/main/designs/pokedex.png)
+![qr imagen](https://raw.githubusercontent.com/peruviansd/pokedex/master/designs/pokedex.PNG)
 
 ### Links
 
