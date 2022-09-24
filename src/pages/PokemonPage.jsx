@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Navigation from "../components/Navigation";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, Navigate } from "react-router-dom";
 import { DataContext } from "../context/Context";
 import colors from "../helpers/colors";
 import { BiArrowBack } from "react-icons/bi";
@@ -8,6 +8,10 @@ import { BiArrowBack } from "react-icons/bi";
 const PokemonPage = () => {
   const { activePokemon } = useContext(DataContext);
   let navigate = useNavigate();
+
+  if (!activePokemon) {
+    return <Navigate to="/pokedex/" replace />;
+  }
 
   let {
     order,
@@ -30,7 +34,7 @@ const PokemonPage = () => {
         <BiArrowBack
           className=" text-2xl shadow-sm  text-black  "
           onClick={() => {
-            navigate("/");
+            navigate("/pokedex/");
           }}
         />
         <section className="flex justify-between ">
