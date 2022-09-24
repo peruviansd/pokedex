@@ -7,7 +7,6 @@ import Evolutions from "./components/Evolutions";
 import Moves from "./components/Moves";
 import "./index.css";
 import PokemonPage from "./pages/PokemonPage";
-
 function App() {
   return (
     <div className=" md:max-w-xl md:mx-auto ">
